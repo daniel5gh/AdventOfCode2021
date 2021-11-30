@@ -5,6 +5,7 @@ fn part1(ints: &Vec<i32>) {
         for y in ints.iter() {
             if x + y == 2020 {
                 println!("{}", x * y);
+                return
             }
         }
     }
@@ -16,6 +17,7 @@ fn part2(ints: &Vec<i32>) {
             for z in ints.iter() {
                 if x + y + z == 2020 {
                     println!("{}", x * y * z);
+                    return
                 }
             }
         }
