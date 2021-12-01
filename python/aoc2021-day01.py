@@ -18,7 +18,7 @@ def part2():
     c = 0
     a = 0
     p_d = max(input) * 3
-    for d in range(len(input)):
+    for d in range(len(input)+1):
         w = input[d-3:d]
         if len(w) != 3:
             continue
@@ -27,7 +27,7 @@ def part2():
             c += 1
         a += 1
         p_d = d
-    print(c+1, a) # bug! a should be 1998, but is 1997 so I guessed the +1 which was correct
+    print(c, a)
 
 
 if __name__=='__main__':
