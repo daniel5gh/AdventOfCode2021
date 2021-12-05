@@ -1,5 +1,3 @@
-import math
-
 import numpy as np
 import pandas as pd
 
@@ -9,7 +7,6 @@ __author__ = 'Daniël'
 
 
 lines = []
-# input = common.read_input('05test')
 input = common.read_input('05')
 maxx = 0
 maxy = 0
